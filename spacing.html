@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spacing - Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        .kotak {
+            width: 30px;
+            height: 30px;
+        }
+
+        .kotak1 {
+            background-color: aqua;
+        }
+
+        .kotak2 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- *Spacing : Margin dan Padding-->
+    <h1>Spacing</h1>
+    <hr>
+    <section>
+        <h2>Margin</h2>
+        <div class="kotak1 kotak m-5"></div>
+        <div class="kotak2 kotak ml-5"></div>
+    </section>
+
+    <section class="flex w-90 m-auto bg-blue-400 mb-10">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </section>
+    <!-- 
+    mx : margin untuk sumbu x 
+    my : margin untuk sumbu y
+    mt : margin-top
+    mb : margin-bottom
+    ml : margin-left
+    mr : margin-right
+    m-auto : margin : auto
+    me : margin-inline-end
+    ms : margin-inline-start
+
+    ket :
+    px = 1px
+    -->
+
+
+
+    <hr>
+    <section>
+        <h1>Padding</h1>
+        <div class="kotak1 kotak p-10"></div>
+        <div class="kotak2 kotak pt-6"></div>
+    </section>
+
+    <section class="w-90 mx-auto bg-blue-400 mb-10">
+        <div class="px-8">01</div>
+        <div class="pt-10">02</div>
+        <div class="">03</div>
+    </section>
+    <!-- 
+     px : padding untuk sumbu x 
+    py : padding untuk sumbu y
+    pt : padding-top
+    pb : padding-bottom
+    pl : padding-left
+    pr : padding-right
+    pe : padding-inline-end
+    ps : padding-inline-start
+
+    ket :
+    px = 1px
+    -->
+</body>
+
+</html>
